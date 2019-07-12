@@ -16,6 +16,8 @@ class Pokemon
     db.execute(
     "INSERT INTO pokemon (name, type)
     VALUES (?, ?)", name, type)
+    
+    DB[:conn].execute
   end
   
   def self.find (id_num, db)
