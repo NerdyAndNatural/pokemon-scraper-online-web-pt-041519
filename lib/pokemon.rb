@@ -1,7 +1,7 @@
 class Pokemon
   
   attr_accessor :name, :type, :id, :db
-   @@all = []
+
 
 
   def initialize (id: nil, name:, type:, db:)
@@ -9,7 +9,6 @@ class Pokemon
     @name = name
     @type = type
     @db = db
-    @@all << self
   end
   
    def self.save(name, type, db)
